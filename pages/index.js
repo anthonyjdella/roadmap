@@ -1,19 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
+import Meta from '../components/meta'
+import Footer from '../components/footer'
 import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Anthony Dellavecchia</title>
-        <meta name="description" content="Anthony Dellavecchia, the software engineer" />
-        <link rel="shortcut icon" href="/images/flat-avatar-2022.svg" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/flat-avatar-2022.svg" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/flat-avatar-2022.svg"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/flat-avatar-2022.svg"/>
-      </Head>
+      <Meta />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -22,15 +16,15 @@ export default function Home() {
 
         <p className={styles.description}>
           This was created as a way to showcase my ability to quickly pick up new skills.
-          <br/>
+          <br />
           It&apos;s built on React + Next.js
         </p>
 
         <div className={styles.grid}>
           <Link href="/what-is-rapidapi">
             <a className={`${styles.card} ${styles.card1}`}>
-              <h2>What is RapidAPI? &rarr;</h2>
-              <p>Learn more about the company, RapidAPI, as well as APIs in general.</p>
+              <h2>What are APIs? &rarr;</h2>
+              <p>Learn more about APIs and how RapidAPI can help find the right API for your needs.</p>
             </a>
           </Link>
 
@@ -59,18 +53,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://anthonydellavecchia.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Wanna learn more? Check out my website {' '}
-          <span className={styles.logo}>
-            <Image src="/anthony-logo.png" alt="Anthony Dellavecchia Avatar" width={52} height={34} />
-          </span>
-        </a>
-      </footer>
+      <Footer/>
     </div>
   )
 }
