@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Anthony Dellavecchia</title>
         <meta name="description" content="Anthony Dellavecchia, the software engineer" />
-        <link rel="icon" href="/Flat-Avatar-2022.svg" />
+        <link rel="icon" href="/flat-avatar-2022.svg" />
       </Head>
 
       <main className={styles.main}>
@@ -17,51 +18,53 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          This was created as a way to showcase my ability to pick up new skills.
+          This was created as a way to showcase my ability to quickly pick up new skills.
           <br/>
           It&apos;s built on React + Next.js
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/what-is-rapidapi">
+            <a className={styles.card}>
+              <h2>What is RapidAPI? &rarr;</h2>
+              <p>Learn more about the company, RapidAPI, as well as APIs in general.</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/my-top-5">
+            <a className={styles.card}>
+              <h2>My Top 5 &rarr;</h2>
+              <p>Here are my top 5 favorite technical blog posts (which I&apos;ve written).</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="/my-roadmap">
+            <a className={styles.card}>
+              <h2>My Roadmap &rarr;</h2>
+              <p>Where I see myself in the future and my DevRel journey.</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/product-lifecycle">
+            <a className={styles.card}>
+              <h2>Product Lifecycle &rarr;</h2>
+              <p>
+                I document my thought process for the creation of this project (so meta).
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://anthonydellavecchia.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Wanna learn more? Check out my website {' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/anthony-logo.png" alt="Anthony Dellavecchia Avatar" width={52} height={34} />
           </span>
         </a>
       </footer>
