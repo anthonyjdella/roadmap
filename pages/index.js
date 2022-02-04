@@ -9,7 +9,10 @@ export default function Home() {
       <Head>
         <title>Anthony Dellavecchia</title>
         <meta name="description" content="Anthony Dellavecchia, the software engineer" />
-        <link rel="icon" href="/flat-avatar-2022.svg" />
+        <link rel="shortcut icon" href="/images/flat-avatar-2022.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/flat-avatar-2022.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/flat-avatar-2022.svg"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/flat-avatar-2022.svg"/>
       </Head>
 
       <main className={styles.main}>
