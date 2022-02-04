@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import styles from '../styles/Menu.module.css'
 
@@ -35,6 +37,12 @@ export default function Menu({children}) {
                         </Link>
                     </li>
                 </ul>
+                <Link href="https://twitter.com/anthonyjdella">
+                    <a className={styles.link}>
+                        <FontAwesomeIcon icon={faTwitter}/>
+                        &nbsp;@AnthonyJDella
+                    </a>
+                </Link>
                 <button className={isOpen === false ? 
                                     styles.hamburger : styles.hamburger+' '+styles.active}
                                     onClick={openMenu}

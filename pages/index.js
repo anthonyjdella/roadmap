@@ -13,6 +13,12 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome! 🎉
         </h1>
+        <h2>This is&nbsp;
+          <Link href="https://anthonydellavecchia.com">
+            <a className={styles.link}>Anthony&apos;s</a>
+          </Link>
+          &nbsp;DevRel Roadmap
+        </h2>
 
         <p className={styles.description}>
           This was created as a way to showcase my ability to quickly pick up new skills.
