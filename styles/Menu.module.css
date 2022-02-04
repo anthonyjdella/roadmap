@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 1.5rem;
+    padding: .5rem 2.5rem;
     border-bottom: 1px solid #E0E2E6;
 }
 
@@ -46,6 +46,12 @@
     font-size: 2.1rem;
     font-weight: 500;
     color: #482ff7;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding: .5rem 25rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
