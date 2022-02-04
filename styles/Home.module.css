@@ -70,26 +70,44 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .card {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: white;
+  font-weight: 200;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
+  transition: transform ease 300ms;
+}
+
+.card1 {
+  background-image: linear-gradient(to right, #A2B8F9, #45339C);
+}
+
+.card2 {
+  background-image: linear-gradient(to right, #A456F6, #6666F1);
+}
+
+.card3 {
+  background-image: linear-gradient(to right, #47DB85, #25B6C4);
+}
+
+.card4 {
+  background-image: linear-gradient(to right, #3CB7F8, #616AF1);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  transform: translate(0, -5px);
 }
 
 .card h2 {

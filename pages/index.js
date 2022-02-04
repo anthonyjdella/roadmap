@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome!
+          Welcome! 🎉
         </h1>
 
         <p className={styles.description}>
@@ -25,28 +25,28 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link href="/what-is-rapidapi">
-            <a className={styles.card}>
+            <a className={`${styles.card} ${styles.card1}`}>
               <h2>What is RapidAPI? &rarr;</h2>
               <p>Learn more about the company, RapidAPI, as well as APIs in general.</p>
             </a>
           </Link>
 
           <Link href="/my-top-5">
-            <a className={styles.card}>
+            <a className={`${styles.card} ${styles.card2}`}>
               <h2>My Top 5 &rarr;</h2>
               <p>Here are my top 5 favorite technical blog posts (which I&apos;ve written).</p>
             </a>
           </Link>
 
           <Link href="/my-roadmap">
-            <a className={styles.card}>
+            <a className={`${styles.card} ${styles.card3}`}>
               <h2>My Roadmap &rarr;</h2>
               <p>Where I see myself in the future and my DevRel journey.</p>
             </a>
           </Link>
 
           <Link href="/product-lifecycle">
-            <a className={styles.card}>
+            <a className={`${styles.card} ${styles.card4}`}>
               <h2>Product Lifecycle &rarr;</h2>
               <p>
                 I document my thought process for the creation of this project (so meta).
