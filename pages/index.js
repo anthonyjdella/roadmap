@@ -19,7 +19,7 @@ export default function Home() {
         <p className={styles.description}>
           This was created as a way to showcase my ability to pick up new skills.
           <br/>
-          It's built on React + Next.js
+          It&apos;s built on React + Next.js
         </p>
 
         <div className={styles.grid}>
