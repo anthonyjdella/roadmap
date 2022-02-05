@@ -16,21 +16,21 @@ export default class Home extends React.Component {
   }
 
   _confetti() {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       showComponent: !prevState.showComponent,
-      confettiConfig:{
+      confettiConfig: {
         angle: 90,
         spread: 360,
         startVelocity: 40,
         elementCount: 140,
         dragFriction: 0.12,
-        duration: 6640,
+        duration: 3000,
         stagger: 3,
         width: "20px",
         height: "20px",
         perspective: "500px",
-        colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
-      }
+        colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+      },
     }));
     console.log("confetti!");
     console.log(this.state.showComponent);
