@@ -53,7 +53,7 @@ export default class Home extends React.Component {
           <h2>
             This is&nbsp;
             <Link href="https://anthonydellavecchia.com">
-              <a className={styles.link} target="_blank">
+              <a className={`${styles.link} ${styles.link1}`} target="_blank">
                 Anthony&apos;s
               </a>
             </Link>
