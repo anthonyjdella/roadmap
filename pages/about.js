@@ -16,9 +16,15 @@ export default function About() {
 
                 Although, it&apos;s my first React project in 3 years (previously he built a simple static-site with Gatsby), I&apos;ve got the passion and adapatbility to learn things quickly, due to my <strong>5+ years of experience as a full-stack software developer</strong>.
 
-                This demonstrates how quickly Anthony can learn new technical skills and how his other skills are very transferable.
+                This demonstrates how quickly I can learn new technical skills and how my other skills are very transferable.
 
                 </p>
+
+            <p className={styles.description}>
+                This was created as a way to showcase my ability to quickly pick up new skills.
+                <br />
+                It&apos;s built on React + Next.js
+            </p>
 
                 <p className={styles.description}>
                     Built with <code>create-next-app</code>

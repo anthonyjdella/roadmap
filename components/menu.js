@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-
 import styles from '../styles/Menu.module.css'
 
 export default function Menu({children}) {
