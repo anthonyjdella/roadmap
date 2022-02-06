@@ -148,6 +148,23 @@ export default class ProductLifecycle extends React.Component {
                   <ul>
                     <li className={stylesLifeCycle.description}>
                       <Link href="/">
+                        <a className={stylesLifeCycle.a}>Global</a>
+                      </Link>
+                      <ul>
+                        <li className={stylesLifeCycle.description}>
+                          Google Analytics so I can track my traffic.
+                        </li>
+                        <li className={stylesLifeCycle.description}>
+                          Try viewing things on mobile and check out the 🍔
+                          menu.
+                        </li>
+                        <li className={stylesLifeCycle.description}>
+                          What happens when you hover over my Twitter handle?
+                        </li>
+                      </ul>
+                    </li>
+                    <li className={stylesLifeCycle.description}>
+                      <Link href="/">
                         <a className={stylesLifeCycle.a}>Homepage</a>
                       </Link>
                       <ul>
@@ -157,13 +174,6 @@ export default class ProductLifecycle extends React.Component {
                         </li>
                         <li className={stylesLifeCycle.description}>
                           Hover over the Cards to see a subtle animation.
-                        </li>
-                        <li className={stylesLifeCycle.description}>
-                          Try viewing things on mobile and check out the 🍔
-                          menu.
-                        </li>
-                        <li className={stylesLifeCycle.description}>
-                          What happens when you hover over my Twitter handle?
                         </li>
                       </ul>
                     </li>
@@ -193,13 +203,16 @@ export default class ProductLifecycle extends React.Component {
                       </ul>
                     </li>
                     <li className={stylesLifeCycle.description}>
-                      <Link href="/my-top-5">
+                      <Link href="/product-lifecycle">
                         <a className={stylesLifeCycle.a}>This Page</a>
                       </Link>
                       <ul>
                         <li className={stylesLifeCycle.description}>
                           Why not click on the colorful images (way down below)
                           for a fun time?
+                        </li>
+                        <li className={stylesLifeCycle.description}>
+                          While you&apos;re down there, see those arrows? They are virtually hand-drawn.
                         </li>
                       </ul>
                     </li>
