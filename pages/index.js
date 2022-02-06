@@ -63,7 +63,7 @@ export default class Home extends React.Component {
           </h2>
 
           <div className={styles.grid}>
-            <Link href="/what-is-rapidapi">
+            <Link href="/what-are-apis">
               <a
                 className={`${styles.card} ${styles.card1}`}
                 onClick={this._confetti}
