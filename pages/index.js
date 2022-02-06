@@ -66,7 +66,6 @@ export default class Home extends React.Component {
             <Link href="/what-are-apis">
               <a
                 className={`${styles.card} ${styles.card1}`}
-                onClick={this._confetti}
               >
                 <h2>What are APIs? &rarr;</h2>
                 <p>
