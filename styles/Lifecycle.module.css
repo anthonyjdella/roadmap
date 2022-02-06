@@ -1,0 +1,69 @@
+.listItem {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.article {
+    width: 66%;
+}
+
+.description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.caption {
+    text-align: center;
+}
+
+.a {
+    color: blue;
+}
+
+.border {
+    border: 4px solid transparent;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.border1 {
+    background:
+        linear-gradient(to right, #A2B8F9, #45339C),
+        linear-gradient(to right, #A2B8F9 , #45339C);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.border2 {
+    background:
+        linear-gradient(to right, #A456F6, #6666F1),
+        linear-gradient(to right, #A456F6 , #6666F1);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.border3 {
+    background:
+        linear-gradient(to right, #47DB85, #25B6C4),
+        linear-gradient(to right, #47DB85 , #25B6C4);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.border4 {
+    background:
+        linear-gradient(to right, #3CB7F8, #616AF1),
+        linear-gradient(to right, #3CB7F8 , #616AF1);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.border5 {
+    background:
+        linear-gradient(to right, #CB569D, #E386A8),
+        linear-gradient(to right, #CB569D , #E386A8);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
