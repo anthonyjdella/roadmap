@@ -252,6 +252,12 @@ export default class ProductLifecycle extends React.Component {
                       width={600}
                       height={500}
                     />
+                    <Image
+                      src="/right-arrow.svg"
+                      alt="Right arrow"
+                      width={300}
+                      height={500}
+                    />
                   </div>
                   <div
                     className={`${stylesLifeCycle.border} ${stylesLifeCycle.border3}`}
@@ -260,6 +266,12 @@ export default class ProductLifecycle extends React.Component {
                     <Confetti
                       active={this.state.showComponent}
                       config={this.state.confettiConfig}
+                    />
+                    <Image
+                      src="/left-arrow.svg"
+                      alt="Left arrow"
+                      width={300}
+                      height={500}
                     />
                     <Image
                       src="/deploy-3.png"
@@ -282,6 +294,12 @@ export default class ProductLifecycle extends React.Component {
                       width={600}
                       height={500}
                     />
+                    <Image
+                      src="/right-arrow.svg"
+                      alt="Right arrow"
+                      width={300}
+                      height={500}
+                    />
                   </div>
                   <div
                     className={`${stylesLifeCycle.border} ${stylesLifeCycle.border5}`}
@@ -290,6 +308,12 @@ export default class ProductLifecycle extends React.Component {
                     <Confetti
                       active={this.state.showComponent}
                       config={this.state.confettiConfig}
+                    />
+                    <Image
+                      src="/left-arrow.svg"
+                      alt="Left arrow"
+                      width={300}
+                      height={500}
                     />
                     <Image
                       src="/deploy-5.png"
