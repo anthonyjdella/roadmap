@@ -162,6 +162,9 @@ export default class ProductLifecycle extends React.Component {
                           Try viewing things on mobile and check out the 🍔
                           menu.
                         </li>
+                        <li className={stylesLifeCycle.description}>
+                          What happens when you hover over my Twitter handle?
+                        </li>
                       </ul>
                     </li>
                     <li className={stylesLifeCycle.description}>
@@ -172,6 +175,9 @@ export default class ProductLifecycle extends React.Component {
                         <li className={stylesLifeCycle.description}>
                           Check out how many hours I spend coding this website.
                           It updates in realtime based on my VSCode usage.
+                        </li>
+                        <li className={stylesLifeCycle.description}>
+                          Hover over my quote and see if anything goes off.
                         </li>
                       </ul>
                     </li>

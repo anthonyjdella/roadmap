@@ -37,7 +37,7 @@ export default function Menu({children}) {
                     </li>
                 </ul>
                 <Link href="https://twitter.com/anthonyjdella">
-                    <a className={styles.link}>
+                    <a className={`${styles.link} ${styles.twitter}`}>
                         <FontAwesomeIcon icon={faTwitter}/>
                         &nbsp;@AnthonyJDella
                     </a>
