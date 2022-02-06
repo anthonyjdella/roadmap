@@ -10,54 +10,6 @@ export default function About() {
       <Meta />
 
       <main className={styles.main}>
-        <h1 className={styles.title}>About This Site</h1>
-
-        <p className={styles.description}>
-          <Link href="https://anthonydellavecchia.com">
-            <a className={`${styles.link} ${styles.link1}`} target="_blank">
-              Anthony
-            </a>
-          </Link>
-          &nbsp;created this site (from Feb 3-6, 2022) to showcase his skills &
-          passion for{" "}
-          <Link href="https://devrel.co/about/">
-            <a className={`${styles.link} ${styles.link2}`} target="_blank">
-              DevRel
-            </a>
-          </Link>
-        </p>
-        <span>&#8595;</span>
-        <Link href="">
-          <a target="_blank">
-            <p>Time spent coding this site: </p>
-            <Image
-              src="https://wakatime.com/badge/github/anthonyjdella/roadmap.svg"
-              alt="wakatime"
-              width={186}
-              height={28}
-            />
-          </a>
-        </Link>
-        <span>&#8595;</span>
-        <p className={styles.description}>
-          It&apos;s built with React + Next.js
-        </p>
-        <span>&#8595;</span>
-        <p className={styles.description}>
-          Using <code>create-next-app</code>
-        </p>
-        <span>&#8595;</span>
-        <p className={styles.description}>
-          Here&apos;s the{" "}
-          <Link href="https://github.com/anthonyjdella/roadmap">
-            <a className={`${styles.link} ${styles.link2}`} target="_blank">
-              GitHub repo
-            </a>
-          </Link>
-        </p>
-
-        <div className={styles.space}></div>
-
         <h1 className={styles.title}>About Anthony</h1>
 
         <blockquote>
@@ -77,6 +29,57 @@ export default function About() {
             </Link>
           </li>
         </ul>
+
+        <div className={styles.space}></div>
+
+        <h1 className={styles.title}>About This Site</h1>
+        <h2>
+          <Link href="https://anthonydellavecchia.com">
+            <a className={`${styles.link} ${styles.link1}`} target="_blank">
+              Anthony
+            </a>
+          </Link>
+          &nbsp;created this site (from Feb 3-6, 2022) to showcase his skills &
+          passion for{" "}
+          <Link href="https://devrel.co/about/">
+            <a className={`${styles.link} ${styles.link2}`} target="_blank">
+              DevRel
+            </a>
+          </Link>
+        </h2>
+
+        <span>&#8595;</span>
+
+        <p>Time spent coding this site: </p>
+        <Image
+          src="https://wakatime.com/badge/github/anthonyjdella/roadmap.svg"
+          alt="wakatime"
+          width={186}
+          height={28}
+        />
+
+        <span>&#8595;</span>
+
+        <p className={styles.description}>
+          It&apos;s built with React + Next.js
+        </p>
+
+        <span>&#8595;</span>
+
+        <p className={styles.description}>
+          Using <code>create-next-app</code>
+        </p>
+
+        <span>&#8595;</span>
+
+        <p className={styles.description}>
+          Here&apos;s the{" "}
+          <Link href="https://github.com/anthonyjdella/roadmap">
+            <a className={`${styles.link} ${styles.link2}`} target="_blank">
+              GitHub repo
+            </a>
+          </Link>
+        </p>
       </main>
       <Footer />
     </div>

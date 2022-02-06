@@ -13,7 +13,7 @@ export default function MyTop5() {
           <h1 className={styles.title}>My Top 5</h1>
           <h2>
             These are some of my favorite technical blog posts (which I&apos;ve
-            written).
+            written)
           </h2>
 
           <article>
@@ -170,7 +170,7 @@ export default function MyTop5() {
               <h2>What&apos;s it about?</h2>
               <p>
                 Djando doesn&apos;t support MongoDB, so I explain a workaround
-                for it.
+                for it. Using PyMongo, a Python distribution.
               </p>
 
               <iframe

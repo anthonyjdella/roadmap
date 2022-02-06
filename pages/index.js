@@ -3,7 +3,6 @@ import Meta from '../components/meta'
 import Footer from '../components/footer'
 import styles from '../styles/Home.module.css'
 import Confetti from 'react-dom-confetti';
-import { useState } from 'react';
 import React from 'react'
 
 export default class Home extends React.Component {
@@ -43,7 +42,10 @@ export default class Home extends React.Component {
         <Meta />
 
         <main className={styles.main}>
-          <h1 className={styles.title} onClick={this._confetti}>
+          <h1
+            className={`${styles.title} ${styles.welcome}`}
+            onClick={this._confetti}
+          >
             Welcome! 🎉
             <Confetti
               active={this.state.showComponent}
@@ -95,7 +97,7 @@ export default class Home extends React.Component {
               <a className={`${styles.card} ${styles.card4}`}>
                 <h2>Product Lifecycle &rarr;</h2>
                 <p>
-                  I document my thought process for the creation of this project
+                  I document my thought process for the creation of this website
                   (so meta).
                 </p>
               </a>
