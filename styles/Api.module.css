@@ -1,0 +1,44 @@
+.animationContainer {
+    position: relative;
+    width: 50rem;
+    height: 15rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, #4A63E2, #59D6FF);
+}
+
+.figures {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, #4A63E2, #59D6FF);
+}
+
+.figureBox {
+    background-color: #E0E2E6;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.figureHidden {
+    display: none;
+}
+
+.actor {
+    text-align: center;
+}
+
+.button {
+    background-color: red;
+}
+
+.line {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #E0E2E6;
+    opacity: .8;
+    width: 50%;
+    height: 1px;
+    margin-top: 100px;
+    animation: 2s cubic-bezier(0.4, 0, 0.6, 1) 0s infinite normal none running pulse;
+}

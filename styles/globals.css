@@ -54,3 +54,13 @@ blockquote span{
   font-weight: bold;
   margin-top:1em;
 }
+
+.btn {
+  background-color: #2F3C76;
+  color: #fff;
+  opacity: 0.9;
+  border-radius: .5rem;
+  padding: .5rem;
+  cursor: pointer;
+  border-color: #2F3C76;
+}
