@@ -3,6 +3,7 @@ import Menu from '../components/menu'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Script from 'next/script'
+
 config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {

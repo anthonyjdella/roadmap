@@ -11,7 +11,7 @@ export default function Footer() {
             >
             Wanna learn more? <br/>Check out my website &rarr;
             <span>
-                <Image src="/anthony-logo.png" alt="Anthony Dellavecchia Logo" width={102} height={64} />
+                <Image src="/menu/anthony-logo.png" alt="Anthony Dellavecchia Logo" width={102} height={64} />
             </span>
             </a>
         </footer>

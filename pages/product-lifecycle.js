@@ -87,7 +87,7 @@ export default class ProductLifecycle extends React.Component {
                             </p>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
-                                    src="/wireframe-1.jpg"
+                                    src="/design/wireframe-1.jpg"
                                     alt="Wireframe 1"
                                     width={800}
                                     height={600}
@@ -98,7 +98,7 @@ export default class ProductLifecycle extends React.Component {
                             </p>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
-                                    src="/wireframe-2.jpg"
+                                    src="/design/wireframe-2.jpg"
                                     alt="Wireframe 2"
                                     width={800}
                                     height={600}
@@ -108,7 +108,7 @@ export default class ProductLifecycle extends React.Component {
                             <p className={stylesLifeCycle.caption}>Homepage</p>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
-                                    src="/wireframe-3.jpg"
+                                    src="/design/wireframe-3.jpg"
                                     alt="Wireframe 3"
                                     width={800}
                                     height={600}
@@ -117,7 +117,7 @@ export default class ProductLifecycle extends React.Component {
                             <p className={stylesLifeCycle.caption}>API Post</p>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
-                                    src="/wireframe-4.jpg"
+                                    src="/design/wireframe-4.jpg"
                                     alt="Wireframe 4"
                                     width={800}
                                     height={600}
@@ -128,7 +128,7 @@ export default class ProductLifecycle extends React.Component {
                             </p>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
-                                    src="/wireframe-5.jpg"
+                                    src="/design/wireframe-5.jpg"
                                     alt="Wireframe 5"
                                     width={800}
                                     height={600}
@@ -318,7 +318,7 @@ export default class ProductLifecycle extends React.Component {
                             <h3>Clean Commits & Incremetal Pushes</h3>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
-                                    src="/github-commits.png"
+                                    src="/design/github-commits.png"
                                     alt="GitHub Commits"
                                     width={600}
                                     height={700}
@@ -342,7 +342,7 @@ export default class ProductLifecycle extends React.Component {
                                     config={this.state.confettiConfig}
                                 />
                                 <Image
-                                    src="/deploy-1.png"
+                                    src="/design/deploy-1.png"
                                     alt="Initial Homepage"
                                     width={600}
                                     height={500}
@@ -357,13 +357,13 @@ export default class ProductLifecycle extends React.Component {
                                     config={this.state.confettiConfig}
                                 />
                                 <Image
-                                    src="/deploy-2.png"
+                                    src="/design/deploy-2.png"
                                     alt="Small Changes Homepage"
                                     width={600}
                                     height={500}
                                 />
                                 <Image
-                                    src="/right-arrow.svg"
+                                    src="/design/right-arrow.svg"
                                     alt="Right arrow"
                                     width={300}
                                     height={500}
@@ -378,13 +378,13 @@ export default class ProductLifecycle extends React.Component {
                                     config={this.state.confettiConfig}
                                 />
                                 <Image
-                                    src="/left-arrow.svg"
+                                    src="/design/left-arrow.svg"
                                     alt="Left arrow"
                                     width={300}
                                     height={500}
                                 />
                                 <Image
-                                    src="/deploy-3.png"
+                                    src="/design/deploy-3.png"
                                     alt="Getting Better Homepage"
                                     width={600}
                                     height={500}
@@ -399,13 +399,13 @@ export default class ProductLifecycle extends React.Component {
                                     config={this.state.confettiConfig}
                                 />
                                 <Image
-                                    src="/deploy-4.png"
+                                    src="/design/deploy-4.png"
                                     alt="More Features Homepage"
                                     width={600}
                                     height={500}
                                 />
                                 <Image
-                                    src="/right-arrow.svg"
+                                    src="/design/right-arrow.svg"
                                     alt="Right arrow"
                                     width={300}
                                     height={500}
@@ -420,13 +420,13 @@ export default class ProductLifecycle extends React.Component {
                                     config={this.state.confettiConfig}
                                 />
                                 <Image
-                                    src="/left-arrow.svg"
+                                    src="/design/left-arrow.svg"
                                     alt="Left arrow"
                                     width={300}
                                     height={500}
                                 />
                                 <Image
-                                    src="/deploy-5.png"
+                                    src="/design/deploy-5.png"
                                     alt="Final Homepage"
                                     width={600}
                                     height={500}

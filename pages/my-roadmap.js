@@ -383,7 +383,11 @@ export default class MyRoadmap extends React.Component {
 
                     <div className={styles.board}>
                         <Board
-                            style={{ background: "#26B7C1", width:"75%", height: "100%" }}
+                            style={{
+                                background: "#26B7C1",
+                                width: "75%",
+                                height: "100%",
+                            }}
                             data={data}
                         />
                     </div>
@@ -402,8 +406,8 @@ export default class MyRoadmap extends React.Component {
                                 company feels about it
                             </li>
                             <li>
-                                What the mononotization strategy (how does
-                                developer engagement lead to higher revenue) is
+                                What the mononotization strategy is (how does
+                                developer engagement lead to higher revenue)
                             </li>
                             <li>
                                 What the developer culture is like and how they
@@ -427,6 +431,10 @@ export default class MyRoadmap extends React.Component {
                             <li>
                                 How people from other departments see DevRel
                             </li>
+                            <li>
+                                The ins and outs of our product and how developers use it
+                            </li>
+                            <li>How the documentation platform works, so I can maintain it and add features</li>
                         </ul>
                     </p>
 

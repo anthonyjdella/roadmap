@@ -15,8 +15,8 @@ export default function Menu({children}) {
                 <nav className={styles.navbar}>
                     <Link href='/'>
                      <a>
-                         <Image src="/anthony-logo.png" alt="Anthony Dellavecchia Logo" width={102} height={64}/>
-                         <Image src="/anthonyapi.png" alt="AnthonyAPI Learn" width={224} height={56}/>
+                         <Image src="/menu/anthony-logo.png" alt="Anthony Dellavecchia Logo" width={102} height={64}/>
+                         <Image src="/menu/anthonyapi.png" alt="AnthonyAPI Learn" width={224} height={56}/>
                      </a>
                     </Link>
                 <ul className={isOpen === false ? 
