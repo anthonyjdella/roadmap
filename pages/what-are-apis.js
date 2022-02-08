@@ -7,22 +7,97 @@ import Button from "react-bootstrap/Button"
 import Confetti from "react-dom-confetti"
 import React from "react";
 
+import styled, { keyframes } from 'styled-components'
+
 export default class WhatIsRapidApi extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isToggleOn: true,
+            move: false,
+            showComponent: false
         };
-        this.handleClick = this.handleClick.bind(this);
+        this.handleIt = this.handleIt.bind(this);
     }
 
-    handleClick() {
-        this.setState((prevState) => ({
-            isToggleOn: !prevState.isToggleOn,
-        }));
+    handleIt() {
+        this.setState({
+            move: true,
+            confettiConfig: {
+                angle: 90,
+                spread: 360,
+                startVelocity: 40,
+                elementCount: 70,
+                dragFriction: 0.12,
+                duration: 3000,
+                stagger: 3,
+                width: "10px",
+                height: "10px",
+                perspective: "500px",
+                colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+            },
+        });
+        setTimeout(() => {
+            this.setState((prevState) => ({
+                showComponent: !prevState.showComponent,
+            }));
+        }, 4000);
     }
+
+    doIt() {
+        console.log('doIt')
+    }
+
 
     render() {
+
+        const xAxisBubble = keyframes`
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+                transform: translateX(-400px);
+                transition-duration: 6s;
+            }
+            90% {
+                opacity: 1;
+                transition-duration: 6s;
+            }
+            100% {
+                visibility: hidden;
+            }
+        `;
+
+        const xAxisBurger = keyframes`
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+                transform: translateX(400px);
+                transition-duration: 6s;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                visibility: hidden;
+            }
+        `;
+
+        const Bubble = styled.div`
+            animation: ${xAxisBubble} 2.5s ease-in;
+            margin-top: 60px;
+            position: absolute;
+            right: 100px;
+            z-index: 2;
+        `;
+
+        const Burger = styled.div`
+            animation: ${xAxisBurger} 2.5s ease-in;
+            margin-top: 110px;
+            animation-delay: 2s;
+            position: absolute;
+            left: 100px;
+            z-index: 2;
+        `;
+
         return (
             <div className={styles.container}>
                 <Meta />
@@ -35,7 +110,10 @@ export default class WhatIsRapidApi extends React.Component {
                     <div className={stylesApi.animationContainer}>
                         <div className={stylesApi.figures}>
                             <div className={stylesApi.figureBox}>
-                                <Confetti />
+                                <Confetti
+                                    active={this.state.showComponent}
+                                    config={this.state.confettiConfig}
+                                />
                                 <Image
                                     src="/animation/customer-cropped.svg"
                                     alt="Customer"
@@ -51,12 +129,17 @@ export default class WhatIsRapidApi extends React.Component {
                                     />
                                 </div>
                                 <p className={stylesApi.actor}>Customer</p>
+
                                 <Button
-                                    onClick={this.handleClick}
+                                    onClick={() => {
+                                        this.handleIt();
+                                        this.doIt();
+                                    }}
                                 >
-                                    {this.state.isToggleOn ? "Request Food" : "Requesting..."}
+                                    Request Food
                                 </Button>
                             </div>
+
                             <div className={stylesApi.figureHidden}>
                                 <Image
                                     src="/burger-cropped.svg"
@@ -65,16 +148,13 @@ export default class WhatIsRapidApi extends React.Component {
                                     height={50}
                                 />
                             </div>
-                            {/* <div className={stylesApi.figureBox}>
-                                <Image
-                                    src="/animation/waiter-cropped.svg"
-                                    alt="Customer"
-                                    width={100}
-                                    height={100}
-                                />
-                                <p className={stylesApi.actor}>Waiter</p>
-                            </div> */}
+
+                            <Burger>🍔</Burger>
+
                             <div className={stylesApi.line}></div>
+
+                            <Bubble>💬</Bubble>
+
                             <div className={stylesApi.figureBox}>
                                 <Image
                                     src="/animation/chef-cropped.svg"

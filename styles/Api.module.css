@@ -12,12 +12,14 @@
     padding: 2rem;
     border-radius: 1rem;
     background-image: linear-gradient(to right, #4A63E2, #59D6FF);
+    z-index: 1;
 }
 
 .figureBox {
     background-color: #E0E2E6;
     border-radius: 1rem;
     padding: 1rem;
+    z-index: 3;
 }
 
 .figureHidden {
@@ -41,4 +43,20 @@
     height: 1px;
     margin-top: 100px;
     animation: 2s cubic-bezier(0.4, 0, 0.6, 1) 0s infinite normal none running pulse;
+}
+
+.burger {
+    animation: xAxis 2.5s ease-in;
+    margin-top: 70px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes xAxis {
+    0% {
+        animation-timing-function: ease-in;
+        transform: translateX(400px);
+    }
 }

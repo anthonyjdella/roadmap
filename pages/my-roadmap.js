@@ -394,7 +394,7 @@ export default class MyRoadmap extends React.Component {
 
                     <h2>More Details...</h2>
 
-                    <p className={styles.description}>
+                    <p className={`${styles.description} ${styles.book}`}>
                         Within the first couple of months, I will learn:
                         <ul className={styles.listItem}>
                             <li>
