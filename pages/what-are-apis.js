@@ -164,315 +164,298 @@ export default class WhatAreApis extends React.Component {
                                 us some context. We will look at an interaction
                                 that everyone has experienced, ordering food at
                                 a restaurant.
-                                <p className={stylesApi.description}>
-                                    Think about this situation for a moment.{" "}
-                                    <i>How would you normally order food?</i>
-                                </p>
-                                <p className={stylesApi.description}>
-                                    In its simplest form, you would: make an
-                                    order, then get your food shortly after
-                                    (hopefully). In other words, you{" "}
-                                    <strong>
-                                        make a request, then get back a response{" "}
-                                    </strong>
-                                    (in the form of food). This basic type of
-                                    interaction (i.e. making some sort of
-                                    request, then getting some type of response
-                                    back) applies to many other contexts. But
-                                    for now, let&apos;s focus on the food
-                                    ordering example.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    Let&apos;s visualize this interaction below:
-                                </p>
-                                <div className={stylesApi.animationContainer}>
-                                    <div className={stylesApi.figures}>
-                                        <div
-                                            className={`${stylesApi.figureBox}`}
-                                        >
-                                            <Confetti
-                                                active={
-                                                    this.state.showComponent
-                                                }
-                                                config={
-                                                    this.state.confettiConfig
-                                                }
-                                            />
-                                            <Image
-                                                src="/animation/customer-cropped.svg"
-                                                alt="Customer"
-                                                width={100}
-                                                height={100}
-                                            />
-                                            <p className={stylesApi.actor}>
-                                                Customer
-                                            </p>
-
-                                            <Button
-                                                onClick={() => {
-                                                    this.handleIt();
-                                                }}
-                                            >
-                                                Request Food
-                                            </Button>
-                                        </div>
-                                        {clicked ? (
-                                            <>
-                                                <Burger>🍔</Burger>
-                                                <Bubble>💬</Bubble>
-                                            </>
-                                        ) : null}
-                                        <div className={stylesApi.line}></div>
-                                        <div className={stylesApi.figureBox}>
-                                            <Image
-                                                src="/animation/chef-cropped.svg"
-                                                alt="Customer"
-                                                width={100}
-                                                height={100}
-                                            />
-                                            <p className={stylesApi.actor}>
-                                                Kitchen
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className={stylesApi.space}></p>
-                                <p className={stylesApi.description}>
-                                    So, what does ordering food have to do with
-                                    APIs?
-                                </p>
-                                <p className={stylesApi.description}>
-                                    At its core, APIs behave in the same way.
-                                    Think of an API as a way for a{" "}
-                                    <strong>
-                                        piece of software to request information
-                                        from another piece of software, then
-                                        receiving a response back.{" "}
-                                    </strong>
-                                    Well, what kind of information are we
-                                    talking about? For the most part, we are
-                                    talking about data. Any data that some
-                                    software wants. For example, a website might
-                                    want to know the weather in a specific
-                                    location. Or a social media app might want
-                                    to know what people are up to. Basically,
-                                    any data that meets your business needs.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    Let&apos;s visualize how an API behaves:
-                                </p>
-                                <div className={stylesApi.animationContainer}>
-                                    <div className={stylesApi.figures}>
-                                        <div
-                                            className={`${stylesApi.figureBox}`}
-                                        >
-                                            <Confetti
-                                                active={
-                                                    this.state.showComponent2
-                                                }
-                                                config={
-                                                    this.state.confettiConfig
-                                                }
-                                            />
-                                            <Image
-                                                src="/animation/client-cropped.svg"
-                                                alt="Client"
-                                                width={100}
-                                                height={100}
-                                            />
-                                            <p className={stylesApi.actor}>
-                                                Your software
-                                            </p>
-
-                                            <Button
-                                                onClick={() => {
-                                                    this.doIt();
-                                                }}
-                                            >
-                                                Request Data
-                                            </Button>
-                                        </div>
-
-                                        {clicked2 ? (
-                                            <>
-                                                <Burger>⬅️</Burger>
-                                                <Bubble>➡️</Bubble>
-                                            </>
-                                        ) : null}
-
-                                        <div className={stylesApi.line}></div>
-
-                                        <div className={stylesApi.figureBox}>
-                                            <Image
-                                                src="/animation/server-cropped.svg"
-                                                alt="Server"
-                                                width={100}
-                                                height={100}
-                                            />
-                                            <p className={stylesApi.actor}>
-                                                Other software
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className={stylesApi.space}></p>
-                                <p className={stylesApi.description}>
-                                    As you can see, an API helps you request
-                                    then receive data.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    In the case of our food ordering example, a
-                                    customer makes a request, which is then sent
-                                    to the kitchen. The kitchen then processes
-                                    the order and sends the food back to the
-                                    customer. The customer doesn&apos;t need to
-                                    know how the kitchen makes their food, just
-                                    that they receive it and is the order that
-                                    they asked for.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    APIs work the same way. A system makes a
-                                    request, which is processed by the receiver.
-                                    The receiver then sends the response back to
-                                    the requester. The requester doesn&apos;t
-                                    need to know how the receiver processes the
-                                    request, just that they receive the response
-                                    and is the request that they asked for.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    Now that we have an idea of what an API is,
-                                    what does it stand for?
-                                </p>
-                                <div>
-                                    <strong>A</strong>pplication
-                                </div>
-                                <div>
-                                    <strong>P</strong>rogramming
-                                </div>
-                                <div>
-                                    <strong>I</strong>nterface
-                                </div>
-                                <p className={stylesApi.description}>
-                                    If you look at those three words, one of
-                                    them might be less clear than the others.
-                                    I&apos;d bet that &quot;interface&quot; is
-                                    that word. So, what does it mean?
-                                </p>
-                                <p className={stylesApi.description}>
-                                    Let&apos;s look at another example. If you
-                                    want to listen to sounds from your computer,
-                                    you have to plug headphones into your
-                                    computer. But how do you do this? You&apos;d
-                                    plug the headphones into a port. The port,
-                                    in this example, is an interface between
-                                    your headphones and the computer. This port
-                                    exposes functionality to the user, so the
-                                    user gets what they want (sound). The user
-                                    doesn&apos;t need to understand how this
-                                    works, just that they get sound.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    Interfaces in software act in the same
-                                    principle. In the context of software, an
-                                    Application Programming Interface helps
-                                    software get information from other software
-                                    without needing to know how it works, just
-                                    that they get what they want.
-                                </p>
-                                <Image
-                                    src="/port.jpeg"
-                                    alt="Headphone Port"
-                                    width={600}
-                                    height={400}
-                                />
-                                <p className={stylesApi.description}>
-                                    Do you see how this principle may be
-                                    beneficial? Since your software just
-                                    requests and receives what it&apos;s looking
-                                    for, you save time by re-using functionality
-                                    that already exists. There is no need to
-                                    re-invent the wheel. Here&apos;s an example:
-                                    why make homemade bread when you can just
-                                    buy it from a store? Doing so would save you
-                                    so much time, which helps you ship your
-                                    product faster.
-                                </p>
-                                <p className={stylesApi.description}>
-                                    Great! Now that we have a better
-                                    understanding of APIs, let&apos;s go into
-                                    just a bit more detail. I&apos;ll go back to
-                                    our earliest example: ordering food. As you
-                                    know, there are a few extra steps that you
-                                    need to take before ordering food. It&apos;s
-                                    not quite as simple as just ordering, then
-                                    receiving food. These steps can be broken
-                                    down as follows:
-                                </p>
-                                <ul>
-                                    <li>
-                                        <u>Step 1:</u> Recognize that you are
-                                        hungry and would like some food.
-                                    </li>
-                                    <li>
-                                        <u>Step 2:</u> Go to a restaurant that
-                                        serves what you&apos;re looking for.
-                                    </li>
-                                    <li>
-                                        <u>Step 3:</u> Browse the menu.
-                                    </li>
-                                    <li>
-                                        <u>Step 4:</u> Decide what you would
-                                        like to order.
-                                    </li>
-                                    <li>
-                                        <u>Step 5:</u> Speak with a waiter and
-                                        make your request.
-                                    </li>
-                                    <li>
-                                        <u>Step 6:</u> Wait a little while, and
-                                        eventually your waiter will bring you
-                                        your order.
-                                    </li>
-                                </ul>
-                                <p className={stylesApi.description}>
-                                    Let&apos;s translate each of these steps in
-                                    the context of APIs:
-                                </p>
-                                <ul>
-                                    <li>
-                                        <u>Step 1:</u> Recognize that you have
-                                        data needs and would like to get it
-                                        without having to build it from scratch.
-                                    </li>
-                                    <li>
-                                        <u>Step 2:</u> Do an Internet search to
-                                        find the API you&apos;re looking for.
-                                    </li>
-                                    <li>
-                                        <u>Step 3:</u> Browse the API
-                                        documentation.
-                                    </li>
-                                    <li>
-                                        <u>Step 4:</u> Decide what data you need
-                                        and how you would request it.
-                                    </li>
-                                    <li>
-                                        <u>Step 5:</u> Interact with the API and
-                                        send your request.
-                                    </li>
-                                    <li>
-                                        <u>Step 6:</u> Wait a little while, and
-                                        eventually your API will bring you your
-                                        data.
-                                    </li>
-                                </ul>
-                                <p className={stylesApi.description}>
-                                    I&apos;ll provide more details about each of
-                                    these steps in a future article, but for
-                                    now, just understanding what an API is
-                                    should be enough to get you started.
-                                </p>
                             </p>
+                            <p className={stylesApi.description}>
+                                Think about this situation for a moment.{" "}
+                                <i>How would you normally order food?</i>
+                            </p>
+                            <p className={stylesApi.description}>
+                                In its simplest form, you would: make an order,
+                                then get your food shortly after (hopefully). In
+                                other words, you{" "}
+                                <strong>
+                                    make a request, then get back a response{" "}
+                                </strong>
+                                (in the form of food). This basic type of
+                                interaction (i.e. making some sort of request,
+                                then getting some type of response back) applies
+                                to many other contexts. But for now, let&apos;s
+                                focus on the food ordering example.
+                            </p>
+                            <p className={stylesApi.description}>
+                                Let&apos;s visualize this interaction below:
+                            </p>
+                            <div className={stylesApi.animationContainer}>
+                                <div className={stylesApi.figures}>
+                                    <div className={`${stylesApi.figureBox}`}>
+                                        <Confetti
+                                            active={this.state.showComponent}
+                                            config={this.state.confettiConfig}
+                                        />
+                                        <Image
+                                            src="/animation/customer-cropped.svg"
+                                            alt="Customer"
+                                            width={100}
+                                            height={100}
+                                        />
+                                        <p className={stylesApi.actor}>
+                                            Customer
+                                        </p>
+
+                                        <Button
+                                            onClick={() => {
+                                                this.handleIt();
+                                            }}
+                                        >
+                                            Request Food
+                                        </Button>
+                                    </div>
+                                    {clicked ? (
+                                        <>
+                                            <Burger>🍔</Burger>
+                                            <Bubble>💬</Bubble>
+                                        </>
+                                    ) : null}
+                                    <div className={stylesApi.line}></div>
+                                    <div className={stylesApi.figureBox}>
+                                        <Image
+                                            src="/animation/chef-cropped.svg"
+                                            alt="Customer"
+                                            width={100}
+                                            height={100}
+                                        />
+                                        <p className={stylesApi.actor}>
+                                            Kitchen
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={stylesApi.space}></p>
+                            <p className={stylesApi.description}>
+                                So, what does ordering food have to do with
+                                APIs?
+                            </p>
+                            <p className={stylesApi.description}>
+                                At its core, APIs behave in the same way. Think
+                                of an API as a way for a{" "}
+                                <strong>
+                                    piece of software to request information
+                                    from another piece of software, then
+                                    receiving a response back.{" "}
+                                </strong>
+                                Well, what kind of information are we talking
+                                about? For the most part, we are talking about
+                                data. Any data that some software wants. For
+                                example, a website might want to know the
+                                weather in a specific location. Or a social
+                                media app might want to know what people are up
+                                to. Basically, any data that meets your business
+                                needs.
+                            </p>
+                            <p className={stylesApi.description}>
+                                Let&apos;s visualize how an API behaves:
+                            </p>
+                            <div className={stylesApi.animationContainer}>
+                                <div className={stylesApi.figures}>
+                                    <div className={`${stylesApi.figureBox}`}>
+                                        <Confetti
+                                            active={this.state.showComponent2}
+                                            config={this.state.confettiConfig}
+                                        />
+                                        <Image
+                                            src="/animation/client-cropped.svg"
+                                            alt="Client"
+                                            width={100}
+                                            height={100}
+                                        />
+                                        <p className={stylesApi.actor}>
+                                            Your software
+                                        </p>
+
+                                        <Button
+                                            onClick={() => {
+                                                this.doIt();
+                                            }}
+                                        >
+                                            Request Data
+                                        </Button>
+                                    </div>
+
+                                    {clicked2 ? (
+                                        <>
+                                            <Burger>⬅️</Burger>
+                                            <Bubble>➡️</Bubble>
+                                        </>
+                                    ) : null}
+
+                                    <div className={stylesApi.line}></div>
+
+                                    <div className={stylesApi.figureBox}>
+                                        <Image
+                                            src="/animation/server-cropped.svg"
+                                            alt="Server"
+                                            width={100}
+                                            height={100}
+                                        />
+                                        <p className={stylesApi.actor}>
+                                            Other software
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={stylesApi.space}></p>
+                            <p className={stylesApi.description}>
+                                As you can see, an API helps you request then
+                                receive data.
+                            </p>
+                            <p className={stylesApi.description}>
+                                In the case of our food ordering example, a
+                                customer makes a request, which is then sent to
+                                the kitchen. The kitchen then processes the
+                                order and sends the food back to the customer.
+                                The customer doesn&apos;t need to know how the
+                                kitchen makes their food, just that they receive
+                                it and is the order that they asked for.
+                            </p>
+                            <p className={stylesApi.description}>
+                                APIs work the same way. A system makes a
+                                request, which is processed by the receiver. The
+                                receiver then sends the response back to the
+                                requester. The requester doesn&apos;t need to
+                                know how the receiver processes the request,
+                                just that they receive the response and is the
+                                request that they asked for.
+                            </p>
+                            <p className={stylesApi.description}>
+                                Now that we have an idea of what an API is, what
+                                does it stand for?
+                            </p>
+                            <div className={stylesApi.font}>
+                                <strong>A</strong>pplication
+                            </div>
+                            <div className={stylesApi.font}>
+                                <strong>P</strong>rogramming
+                            </div>
+                            <div className={stylesApi.font}>
+                                <strong>I</strong>nterface
+                            </div>
+                            <p className={stylesApi.description}>
+                                If you look at those three words, one of them
+                                might be less clear than the others. I&apos;d
+                                bet that &quot;interface&quot; is that word. So,
+                                what does it mean?
+                            </p>
+                            <p className={stylesApi.description}>
+                                Let&apos;s look at another example. If you want
+                                to listen to sounds from your computer, you have
+                                to plug headphones into your computer. But how
+                                do you do this? You&apos;d plug the headphones
+                                into a port. The port, in this example, is an
+                                interface between your headphones and the
+                                computer. This port exposes functionality to the
+                                user, so the user gets what they want (sound).
+                                The user doesn&apos;t need to understand how
+                                this works, just that they get sound.
+                            </p>
+                            <p className={stylesApi.description}>
+                                Interfaces in software act in the same
+                                principle. In the context of software, an
+                                Application Programming Interface helps software
+                                get information from other software without
+                                needing to know how it works, just that they get
+                                what they want.
+                            </p>
+                            <Image
+                                src="/port.jpeg"
+                                alt="Headphone Port"
+                                width={600}
+                                height={400}
+                            />
+                            <p className={stylesApi.description}>
+                                Do you see how this principle may be beneficial?
+                                Since your software just requests and receives
+                                what it&apos;s looking for, you save time by
+                                re-using functionality that already exists.
+                                There is no need to re-invent the wheel.
+                                Here&apos;s an example: why make homemade bread
+                                when you can just buy it from a store? Doing so
+                                would save you so much time, which helps you
+                                ship your product faster.
+                            </p>
+                            <p className={stylesApi.description}>
+                                Great! Now that we have a better understanding
+                                of APIs, let&apos;s go into just a bit more
+                                detail. I&apos;ll go back to our earliest
+                                example: ordering food. As you know, there are a
+                                few extra steps that you need to take before
+                                ordering food. It&apos;s not quite as simple as
+                                just ordering, then receiving food. These steps
+                                can be broken down as follows:
+                            </p>
+                            <ul className={stylesApi.ul}>
+                                <li>
+                                    <u>Step 1:</u> Recognize that you are hungry
+                                    and would like some food.
+                                </li>
+                                <li>
+                                    <u>Step 2:</u> Go to a restaurant that
+                                    serves what you&apos;re looking for.
+                                </li>
+                                <li>
+                                    <u>Step 3:</u> Browse the menu.
+                                </li>
+                                <li>
+                                    <u>Step 4:</u> Decide what you would like to
+                                    order.
+                                </li>
+                                <li>
+                                    <u>Step 5:</u> Speak with a waiter and make
+                                    your request.
+                                </li>
+                                <li>
+                                    <u>Step 6:</u> Wait a little while, and
+                                    eventually your waiter will bring you your
+                                    order.
+                                </li>
+                            </ul>
+                            <p className={stylesApi.description}>
+                                Let&apos;s translate each of these steps in the
+                                context of APIs:
+                            </p>
+                            <ul className={stylesApi.ul}>
+                                <li>
+                                    <u>Step 1:</u> Recognize that you have data
+                                    needs and would like to get it without
+                                    having to build it from scratch.
+                                </li>
+                                <li>
+                                    <u>Step 2:</u> Do an Internet search to find
+                                    the API you&apos;re looking for.
+                                </li>
+                                <li>
+                                    <u>Step 3:</u> Browse the API documentation.
+                                </li>
+                                <li>
+                                    <u>Step 4:</u> Decide what data you need and
+                                    how you would request it.
+                                </li>
+                                <li>
+                                    <u>Step 5:</u> Interact with the API and
+                                    send your request.
+                                </li>
+                                <li>
+                                    <u>Step 6:</u> Wait a little while, and
+                                    eventually your API will bring you your
+                                    data.
+                                </li>
+                            </ul>
+                            <p className={stylesApi.description}>
+                                I&apos;ll provide more details about each of
+                                these steps in a future article, but for now,
+                                just understanding what an API is should be
+                                enough to get you started.
+                            </p>
+                            {/* </p> */}
                             <li className={stylesApi.listItem}>
                                 Where can I find an API?
                             </li>
