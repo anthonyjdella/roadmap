@@ -94,11 +94,10 @@ export default class MyRoadmap extends React.Component {
             {
                 cards: [
                     {
-                        title: "Write a Blog about APIs ✍️",
-                        description:
-                            "Write a blog post to teach beginner developers about APIs",
+                        title: "Write about APIs Part:2 ✍️",
+                        description: "Write another blog post APIs",
                         id: "api",
-                        label: "1 day",
+                        label: "3 days",
                         laneId: "WIP",
                         tags: [
                             {
@@ -135,7 +134,8 @@ export default class MyRoadmap extends React.Component {
                     },
                     {
                         title: "Get a Job in DevRel 💬",
-                        description: "Find an opportunity with a good culture, good fit, and room for growth",
+                        description:
+                            "Find an opportunity with a good culture, good fit, and room for growth",
                         id: "job",
                         label: "1 month",
                         laneId: "WIP",
@@ -349,6 +349,26 @@ export default class MyRoadmap extends React.Component {
                             {
                                 title: "Coding",
                                 bgcolor: "#083642",
+                                color: "white",
+                            },
+                        ],
+                    },
+                    {
+                        title: "Write a Blog about APIs ✍️",
+                        description:
+                            "Write a blog post to teach beginner developers about APIs",
+                        id: "api",
+                        label: "2 days",
+                        laneId: "COMPLETED",
+                        tags: [
+                            {
+                                title: "Content",
+                                bgcolor: "#0079BF",
+                                color: "white",
+                            },
+                            {
+                                title: "Community",
+                                bgcolor: "#F3B005",
                                 color: "white",
                             },
                         ],
