@@ -39,7 +39,7 @@ export default function About() {
               Anthony
             </a>
           </Link>
-          &nbsp;created this site (from Feb 3-6, 2022) to showcase his skills &
+          &nbsp;created this site (from Feb 3-8, 2022) to showcase his skills &
           passion for{" "}
           <Link href="https://devrel.co/about/">
             <a className={`${styles.link} ${styles.link2}`} target="_blank">

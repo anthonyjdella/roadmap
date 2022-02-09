@@ -45,18 +45,62 @@
     animation: 2s cubic-bezier(0.4, 0, 0.6, 1) 0s infinite normal none running pulse;
 }
 
-.burger {
-    animation: xAxis 2.5s ease-in;
-    margin-top: 70px;
-}
-
 .hidden {
     display: none;
 }
 
-@keyframes xAxis {
-    0% {
-        animation-timing-function: ease-in;
-        transform: translateX(400px);
-    }
+.abbr {
+    font-size: 3rem;
+    display: inline;
+    font-weight: 600;
+    text-align: center;
 }
+
+.abbr2 {
+    font-size: 1.5rem;
+    display: inline;
+    font-weight: 300;
+    text-align: center;
+}
+
+.article {
+    width: 66%;
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.listItem {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    list-style-type: none;
+    color: #2849AF;
+}
+
+.description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.space {
+    margin-bottom: 6rem;
+}
+
+.link {
+		border-bottom: .125em solid #0070f3;
+		box-shadow: inset 0 -0.125em 0 #0070f3;
+}
+
+.link:hover {
+    box-shadow: inset 0 -1.125em 0 #0070f3;
+    color: white;
+}
+
+.link:focus {
+    background: #0070f3;
+    color: #fff;
+}
+

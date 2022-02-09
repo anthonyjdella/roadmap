@@ -18,25 +18,25 @@ export default class ProductLifecycle extends React.Component {
 
     _confetti() {
     this.setState((prevState) => ({
-      showComponent: !prevState.showComponent,
-      confettiConfig: {
-        angle: 90,
-        spread: 200,
-        startVelocity: 40,
-        elementCount: 100,
-        dragFriction: 0.12,
-        duration: 3000,
-        stagger: 3,
-        width: "10px",
-        height: "10px",
-        perspective: "500px",
-        colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
-      },
+        showComponent: !prevState.showComponent,
+        confettiConfig: {
+            angle: 90,
+            spread: 200,
+            startVelocity: 40,
+            elementCount: 100,
+            dragFriction: 0.12,
+            duration: 3000,
+            stagger: 3,
+            width: "10px",
+            height: "10px",
+            perspective: "500px",
+            colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+        },
     }));
     console.log("confetti!");
     console.log(this.state.showComponent);
     console.log(this.state.confettiConfig);
-  }
+    }
 
     render() {
         return (
@@ -238,6 +238,22 @@ export default class ProductLifecycle extends React.Component {
                                         >
                                             Hover over my quote and see if
                                             anything goes off.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className={stylesLifeCycle.description}>
+                                    <Link href="/what-are-apis">
+                                        <a className={stylesLifeCycle.a}>
+                                            What Are APIs?
+                                        </a>
+                                    </Link>
+                                    <ul>
+                                        <li
+                                            className={
+                                                stylesLifeCycle.description
+                                            }
+                                        >
+                                            Click on the Request Food button for an interactive.
                                         </li>
                                     </ul>
                                 </li>
