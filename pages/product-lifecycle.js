@@ -53,8 +53,8 @@ export default class ProductLifecycle extends React.Component {
                                 Step 1: Why This Website?
                             </li>
                             <p className={stylesLifeCycle.description}>
-                                I wanted to showcase my DevRel skills while use
-                                languages and tools that are new to me. I
+                                I wanted to showcase my DevRel skills while
+                                using languages and tools that are new to me. I
                                 thought it&apos;d be a creative way to put
                                 myself out there.
                             </p>
@@ -142,7 +142,7 @@ export default class ProductLifecycle extends React.Component {
                             </li>
                             <p className={stylesLifeCycle.description}>
                                 Before posting my content, I created an outline
-                                & rough-draft (just like writing something for
+                                & rough draft (just like writing something for
                                 school). I use Notion, and wrote them down in
                                 my&nbsp;
                                 <Link href="https://anthonyjdella.notion.site/What-is-an-API-146843ac831e485d89bd194b111b2d49">
@@ -229,7 +229,7 @@ export default class ProductLifecycle extends React.Component {
                                         >
                                             Check out how many hours I spend
                                             coding this website. It updates in
-                                            realtime based on my VSCode usage.
+                                            real time based on my VSCode usage.
                                         </li>
                                         <li
                                             className={
@@ -253,7 +253,8 @@ export default class ProductLifecycle extends React.Component {
                                                 stylesLifeCycle.description
                                             }
                                         >
-                                            Click on the Request Food button for an interactive.
+                                            Click on the Request Food button for
+                                            an interactive.
                                         </li>
                                     </ul>
                                 </li>
@@ -327,11 +328,11 @@ export default class ProductLifecycle extends React.Component {
                             <p className={stylesLifeCycle.description}>
                                 I always take an iterative approach to software
                                 development. I strongly believe in creating a
-                                protoype, then building on incrementally. When
+                                prototype, then building on incrementally. When
                                 doing this, it&apos;s important to document
                                 progress and make everything easy to understand.
                             </p>
-                            <h3>Clean Commits & Incremetal Pushes</h3>
+                            <h3>Clean Commits & Incremental Pushes</h3>
                             <div className={`${stylesLifeCycle.border}`}>
                                 <Image
                                     src="/design/github-commits.png"
@@ -344,7 +345,7 @@ export default class ProductLifecycle extends React.Component {
                                 Clear, concise, and beautiful commit messages.
                             </p>
 
-                            <h3>Incremetal Progress</h3>
+                            <h3>Incremental Progress</h3>
                             <p className={stylesLifeCycle.description}>
                                 Here, we can see how this site was built over
                                 time.

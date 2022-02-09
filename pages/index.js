@@ -96,7 +96,7 @@ export default class Home extends React.Component {
               <a className={`${styles.card} ${styles.card4}`}>
                 <h2>Product Lifecycle &rarr;</h2>
                 <p>
-                  I document my thought process for the creation of this website
+                  I document my thought process during the creation of this website
                   (so meta).
                 </p>
               </a>

@@ -137,7 +137,7 @@ export default function MyTop5() {
 
               <h2>What&apos;s it about?</h2>
               <p>
-                I explain why using a developer specific font can improve your
+                I explain why using a developer-specific font can improve your
                 productivity and health.
               </p>
 
@@ -169,7 +169,7 @@ export default function MyTop5() {
 
               <h2>What&apos;s it about?</h2>
               <p>
-                Djando doesn&apos;t support MongoDB, so I explain a workaround
+                Django doesn&apos;t support MongoDB, so I explain a workaround
                 for it. Using PyMongo, a Python distribution.
               </p>
 

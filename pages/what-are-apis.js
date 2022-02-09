@@ -132,7 +132,7 @@ export default class WhatAreApis extends React.Component {
                 <main className={styles.main}>
                     <h1 className={styles.title}>What are APIs?</h1>
                     <h2 className={stylesApi.title}>
-                        A beginner friendly article about APIs & why they are
+                        A beginner-friendly article about APIs & why they are
                         important
                     </h2>
 
@@ -157,13 +157,13 @@ export default class WhatAreApis extends React.Component {
                                 let&apos;s look at a real-world example to give
                                 us some context. We will look at an interaction
                                 that everyone has experienced, ordering food at
-                                a restaurantuant.
+                                a restaurant.
                                 <p className={stylesApi.description}>
                                     Think about this situation for a moment.{" "}
                                     <i>How would you normally order food?</i>
                                 </p>
                                 <p className={stylesApi.description}>
-                                    In it&apos;s simplest form, you would: make
+                                    In its simplest form, you would: make
                                     an order, then get your food shortly after
                                     (hopefully). In other words, you{" "}
                                     <strong>
@@ -257,11 +257,11 @@ export default class WhatAreApis extends React.Component {
                                     APIs?
                                 </p>
                                 <p className={stylesApi.description}>
-                                    At it&apos;s core, APIs behave in the same
+                                    At its core, APIs behave in the same
                                     way. Think of an API as a way for a{" "}
                                     <strong>
                                         piece of software to request information
-                                        to another piece of software, then
+                                        from another piece of software, then
                                         receiving a response back.{" "}
                                     </strong>
                                     Well, what kind of information are we
@@ -376,7 +376,7 @@ export default class WhatAreApis extends React.Component {
                                     you have to plug headphones into your
                                     computer. But how do you do this? You&apos;d
                                     plug the headphones into a port. The port,
-                                    in this example is an interface between your
+                                    in this example, is an interface between your
                                     headphones and the computer. This port
                                     exposes functionality to the user, so the
                                     user gets what they want (sound). The user
@@ -446,8 +446,7 @@ export default class WhatAreApis extends React.Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <u>Step 1:</u> Recognize that you have a
-                                        need for data and would like to get it
+                                        <u>Step 1:</u> Recognize that you have data needs and would like to get it
                                         without having to build it from scratch.
                                     </li>
                                     <li>
@@ -483,7 +482,8 @@ export default class WhatAreApis extends React.Component {
                                 eat pasta, you could either visit the restaurant
                                 that you&apos;ve previously visited, or you
                                 might want to look online for a new restaurant
-                                with good reviews. Other times, you might not even know what you want to eat.
+                                with good reviews. Other times, you might not
+                                even know what you want to eat.
                             </p>
                             <p className={stylesApi.description}>
                                 This idea also applies to APIs. If you want to
@@ -492,27 +492,32 @@ export default class WhatAreApis extends React.Component {
                                 Google search to find what you&apos;re looking
                                 for. But this can be difficult because there are
                                 so many APIs out there. And a lot of times, it
-                                can be hard to find the right API that you need. Sometimes, you might just want to browse APIs by categories and see what&apos;s out there.
+                                can be hard to find the right API that you need.
+                                Sometimes, you might just want to browse APIs by
+                                categories and see what&apos;s out there.
                             </p>
                             <p className={stylesApi.description}>
                                 Well, what if you wanted to make things easier?
-                                You might go to a buffet, since you know they
+                                You might go to a buffet since you know they
                                 have all types of food. And what if you could
                                 visit an aggregate marketplace for all kinds of
                                 APIs? Wouldn&apos;t that be so much easier?
                             </p>
                             <p className={stylesApi.description}>
-                                Thankfully, there&apos;s a product that does just
-                                this!{" "}
+                                Thankfully, there&apos;s a product that does
+                                just this!{" "}
                                 <Link href="https://rapidapi.com/">
-                                    <a className={stylesApi.link} target="_blank">
+                                    <a
+                                        className={stylesApi.link}
+                                        target="_blank"
+                                    >
                                         RapidAPI
                                     </a>
-                                </Link>
-                                {" "}is a marketplace/aggregate of APIs, to help you
+                                </Link>{" "}
+                                is a marketplace/aggregate of APIs, to help you
                                 find the right API for your needs. You can think
-                                of it as a buffet of APIs, because it&apos;s
-                                got every possible thing you might need.
+                                of it as a buffet of APIs because it&apos;s got
+                                every possible thing you might need.
                             </p>
 
                             <li className={stylesApi.listItem}>
