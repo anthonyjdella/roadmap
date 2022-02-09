@@ -14,16 +14,18 @@ export default class WhatAreApis extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            move: false,
             showComponent: false,
-            showComponent2: false
+            showComponent2: false,
+            clicked: false,
+            clicked2: false
         };
         this.handleIt = this.handleIt.bind(this);
+        this.doIt = this.doIt.bind(this);
     }
 
     handleIt() {
         this.setState({
-            move: true,
+            clicked: true,
             confettiConfig: {
                 angle: 90,
                 spread: 70,
@@ -47,6 +49,7 @@ export default class WhatAreApis extends React.Component {
 
     doIt() {
         this.setState({
+            clicked2: true,
             confettiConfig: {
                 angle: 90,
                 spread: 70,
@@ -69,13 +72,16 @@ export default class WhatAreApis extends React.Component {
         });
         setTimeout(() => {
             this.setState((prevState) => ({
-                shiowComponent2: !prevState.showComponent2
+                showComponent2: !prevState.showComponent2
             }));
         }, 4000);
     }
 
 
     render() {
+
+        const clicked = this.state.clicked;
+        const clicked2 = this.state.clicked2;
 
         const xAxisBubble = keyframes`
             0% {
@@ -163,8 +169,8 @@ export default class WhatAreApis extends React.Component {
                                     <i>How would you normally order food?</i>
                                 </p>
                                 <p className={stylesApi.description}>
-                                    In its simplest form, you would: make
-                                    an order, then get your food shortly after
+                                    In its simplest form, you would: make an
+                                    order, then get your food shortly after
                                     (hopefully). In other words, you{" "}
                                     <strong>
                                         make a request, then get back a response{" "}
@@ -198,18 +204,6 @@ export default class WhatAreApis extends React.Component {
                                                 width={100}
                                                 height={100}
                                             />
-                                            <div
-                                                className={
-                                                    stylesApi.figureHidden
-                                                }
-                                            >
-                                                <Image
-                                                    src="/animation/customer-burger-cropped.svg"
-                                                    alt="Customer"
-                                                    width={100}
-                                                    height={100}
-                                                />
-                                            </div>
                                             <p className={stylesApi.actor}>
                                                 Customer
                                             </p>
@@ -222,22 +216,13 @@ export default class WhatAreApis extends React.Component {
                                                 Request Food
                                             </Button>
                                         </div>
-
-                                        <div className={stylesApi.figureHidden}>
-                                            <Image
-                                                src="/burger-cropped.svg"
-                                                alt="Customer"
-                                                width={50}
-                                                height={50}
-                                            />
-                                        </div>
-
-                                        <Burger>🍔</Burger>
-
+                                        {clicked ? (
+                                            <>
+                                                <Burger>🍔</Burger>
+                                                <Bubble>💬</Bubble>
+                                            </>
+                                        ) : null}
                                         <div className={stylesApi.line}></div>
-
-                                        <Bubble>💬</Bubble>
-
                                         <div className={stylesApi.figureBox}>
                                             <Image
                                                 src="/animation/chef-cropped.svg"
@@ -257,8 +242,8 @@ export default class WhatAreApis extends React.Component {
                                     APIs?
                                 </p>
                                 <p className={stylesApi.description}>
-                                    At its core, APIs behave in the same
-                                    way. Think of an API as a way for a{" "}
+                                    At its core, APIs behave in the same way.
+                                    Think of an API as a way for a{" "}
                                     <strong>
                                         piece of software to request information
                                         from another piece of software, then
@@ -308,11 +293,14 @@ export default class WhatAreApis extends React.Component {
                                             </Button>
                                         </div>
 
-                                        <Burger>⬅️</Burger>
+                                        {clicked2 ? (
+                                            <>
+                                                <Burger>⬅️</Burger>
+                                                <Bubble>➡️</Bubble>
+                                            </>
+                                        ) : null}
 
                                         <div className={stylesApi.line}></div>
-
-                                        <Bubble>➡️</Bubble>
 
                                         <div className={stylesApi.figureBox}>
                                             <Image
@@ -376,8 +364,8 @@ export default class WhatAreApis extends React.Component {
                                     you have to plug headphones into your
                                     computer. But how do you do this? You&apos;d
                                     plug the headphones into a port. The port,
-                                    in this example, is an interface between your
-                                    headphones and the computer. This port
+                                    in this example, is an interface between
+                                    your headphones and the computer. This port
                                     exposes functionality to the user, so the
                                     user gets what they want (sound). The user
                                     doesn&apos;t need to understand how this
@@ -391,6 +379,12 @@ export default class WhatAreApis extends React.Component {
                                     without needing to know how it works, just
                                     that they get what they want.
                                 </p>
+                                <Image
+                                    src="/port.jpeg"
+                                    alt="Headphone Port"
+                                    width={600}
+                                    height={400}
+                                />
                                 <p className={stylesApi.description}>
                                     Do you see how this principle may be
                                     beneficial? Since your software just
@@ -446,7 +440,8 @@ export default class WhatAreApis extends React.Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <u>Step 1:</u> Recognize that you have data needs and would like to get it
+                                        <u>Step 1:</u> Recognize that you have
+                                        data needs and would like to get it
                                         without having to build it from scratch.
                                     </li>
                                     <li>
@@ -471,7 +466,12 @@ export default class WhatAreApis extends React.Component {
                                         data.
                                     </li>
                                 </ul>
-                                <p className={stylesApi.description}></p>
+                                <p className={stylesApi.description}>
+                                    I&apos;ll provide more details about each of
+                                    these steps in a future article, but for
+                                    now, just understanding what an API is
+                                    should be enough to get you started.
+                                </p>
                             </p>
                             <li className={stylesApi.listItem}>
                                 Where can I find an API?
